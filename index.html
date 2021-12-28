@@ -22,7 +22,36 @@
     <header>
         <h1>Robert Gonzales</h1>
     </header>
-    
+
+    <marquee behavior="" direction="">
+        <p1>Still in development. &emsp; </p1>
+        <span id="date"></span>
+    </marquee>
+
+    <div class="intro">
+        <div class="ProfilePhoto">
+            <img src="ProfilePhoto.jpeg", width="400px", >
+        </div>
+
+        <div class="bio">
+            Hello, my name is Robert Gonzales. I'm a recent graduate from the University of Oklahoma.
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("date").innerHTML = formatAMPM();
+
+        function formatAMPM() {
+            var d = new Date(),
+            minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+            hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+            ampm = d.getHours() >= 12 ? 'pm' : 'am',
+            months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+            days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+            return 'Today is: '+ days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes;
+        }
+    </script>
+
 </body>
 
 </html>

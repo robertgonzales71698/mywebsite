@@ -27,13 +27,37 @@
     color: black;
 }
 
+body {
+    background-color: rgb(220, 224, 224);
+}
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Header.jpg);
-    height: 1000px;
     background-size: cover;
     background-position: center;
+    background-color: grey;
     text-align: center;
     font-size: 50px;
     color:white;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+marquee {
+    background-color: red;
+}
+.intro {
+    display: flex;
+    flex-direction: row;
+}
+
+.ProfilePhoto {
+    padding-left: 100px;
+    padding-top: 25px;
+    flex: 0%;
+}
+
+.bio {
+    padding-top: 100px;
+    padding-right: 200px;
+    padding-left: 5px;
+    flex: 0%;
+    text-indent: 20px;
 }
