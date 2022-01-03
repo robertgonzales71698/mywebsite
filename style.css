@@ -30,6 +30,7 @@
 body {
     background-color: rgb(220, 224, 224);
 }
+
 header {
     background-size: cover;
     background-position: center;
@@ -49,7 +50,7 @@ marquee {
 }
 
 .ProfilePhoto {
-    padding-left: 100px;
+    padding-left: 150px;
     padding-top: 25px;
     flex: 0%;
 }
