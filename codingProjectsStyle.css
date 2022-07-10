@@ -26,3 +26,17 @@
     background-color: white;
     color: black;
 }
+
+body {
+    background-color: rgb(220, 224, 224);
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    background-color: grey;
+    text-align: center;
+    font-size: 50px;
+    color:white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
