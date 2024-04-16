@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="/Home Tab/style.css" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="topnav">
-        <a class="active" href="/index.html">Home</a>
-        <a href="/About Tab/about.html">About</a>
-        <a href="/Coding Projects Tab/codingProjects.html">Coding Projects</a>
-        <a href="#photography">Photography</a>
-        <a href="#videography">Videography</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#projects">Coding Projects</a></li>
+        <li><a href="#photography">Photography</a></li>
+        <li><a href="#videography">Videography</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <marquee id="repeat-marquee" behavior="scroll" direction="left" scrollamount="5">
+  </marquee>
+
+  <div id="home" class="page">
+    <h1 class="centered">Robert Gonzales</h1>
+    <div class="centered">
+      <img src="Images/ProfilePhoto.jpeg" alt="Profile Pic">
     </div>
+  </div>
 
-    <header>
-        <h1>Robert Gonzales</h1>
-    </header>
+  <div id="about" class="page">
+    <h1>About Me</h1>
+    <!-- Add content for the about page -->
+  </div>
 
-    <marquee behavior="" direction="">
-        <p1>Still in development. &emsp; </p1>
-        <span id="date"></span>
-    </marquee>
+  <div id="projects" class="page">
+    <h1>Coding Projects</h1>
+    <!-- Add content for the projects page -->
+  </div>
 
-    <div class="intro">
-        <div class="ProfilePhoto">
-            <img src="/Photos/ProfilePhoto.jpeg", width="400px", style="border: 2px solid black;">
-        </div>
+  <div id="photography" class="page">
+    <h1>Photography</h1>
+    <!-- Add content for the photography page -->
+  </div>
 
-        <div class="bio">
-            <p style="background-color:grey;">Hello, my name is Robert Gonzales. I'm a software engineer based in Arizona working for Boeing. I graduated from the University of Oklahoma in 2022 with a bachelors degree in Computer Science.</p>
-            <p style="background-color:grey;">This website is a side project of mine in order to showcase some of my hobbies and skill. It was created and is maintained by me using HTML, CSS, and JavaScript. These coding languages were self taught in order to expand my coding skillset. </p>
-            <p style="background-color:grey;">For questions and concerns please see my contact information on the Contact page.</p>
-        </div>
-    </div>
+  <div id="videography" class="page">
+    <h1>Videography</h1>
+    <!-- Add content for the videography page -->
+  </div>
 
-    <hr>
+  <div id="blog" class="page">
+    <h1>Blog</h1>
+    <!-- Add content for the blog page -->
+  </div>
 
-    <script>
-        document.getElementById("date").innerHTML = formatAMPM();
+  <div id="contact" class="page">
+    <h1>Contact</h1>
+    <!-- Add content for the contact page -->
+  </div>
 
-        function formatAMPM() {
-            var d = new Date(),
-            minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-            hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
-            ampm = d.getHours() >= 12 ? 'pm' : 'am',
-            months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
-            days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-            return 'Today is: '+ days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes;
-        }
-    </script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
