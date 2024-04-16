@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 3px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px; /* Adjust this value as needed */
+    padding: 30px 10px; /* Adjust padding to increase height */
+    line-height: 40px; /* Add space between text and top border */
+  }
+
+  nav ul li:first-child {
+    margin-left: 20px; /* Adjust this value as needed */
+  }
+  
+  .page {
+    padding: 20px;
+  }
+
+  #repeat-marquee {
+    color: white; /* Text color */
+    background-color: red; /* Background color */
+    font-size: 16px; /* Font size */
+    padding: 10px; /* Padding */
+    width: 100%; /* Width */
+    margin-bottom: 1px; /* Decrease this value to reduce space between marquee and title */
+  }
+
+  .centered {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h1.centered {
+    font-size: 8em; /* Adjust this value as needed */
+    margin-bottom: 5px; /* Decrease this value to reduce space between title and marquee */
+    margin-top: 1px;
+  }
+
+  .centered img {
+    max-width: 100%;
+    max-height: 90vh; /* Adjust this value as needed */
+  }
+  
